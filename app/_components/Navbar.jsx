@@ -28,7 +28,7 @@ const navOptions = [
     link: "/contact",
   },
 ];
-export default ({resumeUrl}) => {
+export default function NavbarComponent({resumeUrl}) {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (

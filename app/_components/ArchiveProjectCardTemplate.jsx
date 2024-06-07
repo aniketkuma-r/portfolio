@@ -16,7 +16,7 @@ export default function ArchiveProjectCardTemplate({ data }) {
 
   return (
     <div className="flex flex-col items-center gap-3 w-full p-1 sm:p-4 lg:px-0 my-6 mb-12">
-      <h2 className="m-auto capitalize">Some More Projects I've Built</h2>
+      <h2 className="m-auto capitalize">{"Some More Projects I've Built"}</h2>
       <pre className="text-center text-sm sm:text-md md:text-lg text-primary">
         view the archives...
       </pre>

@@ -2,7 +2,7 @@
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
-export default async function Education({ data }) {
+export default function Education({ data }) {
   return (
     <div className="flex flex-col gap-3 max-w-[1024px] w-full p-1 sm:p-4 my-4">
       <h2 className="m-auto text-primary">My Education</h2>

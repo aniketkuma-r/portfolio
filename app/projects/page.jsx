@@ -3,10 +3,9 @@ import ProjectTemplate from "../_components/ProjectTemplate";
 import SectionTitle from "../_components/SectionTitle";
 import { handleParallelSheetDataFetching } from "../api/getSheetData";
 
-export default async () => {
+export default async function Project() {
   const [projectsData, archivesProjectsData] =
     await handleParallelSheetDataFetching(["projects", "archives"]);
-
 
   return (
     <main className="bg-gray-500/5">

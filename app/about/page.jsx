@@ -5,7 +5,7 @@ import SectionTitle from "../_components/SectionTitle";
 import Skill from "../_components/Skill";
 import { handleParallelSheetDataFetching } from "../api/getSheetData";
 
-export default async () => {
+export default async function AboutPage() {
   const [[aboutData], skillsData, educationsData, experiencesData] =
     await handleParallelSheetDataFetching([
       "about",

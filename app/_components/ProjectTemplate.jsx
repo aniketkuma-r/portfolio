@@ -79,7 +79,7 @@ export default function ProjectTemplate({ data }) {
                 alt="backgroundImage"
                 priority
               />
-              <div className="absolute inset-0 w-full h-full bg-primary bg-opacity-15 hover:bg-transparent delay-75 transition-all"></div>
+              <div className="absolute inset-0 w-full h-full bg-primary bg-opacity-15 hover:bg-transparent transition-all"></div>
             </div>
           </div>
         </li>
