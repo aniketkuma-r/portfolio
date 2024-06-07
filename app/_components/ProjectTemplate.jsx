@@ -20,7 +20,7 @@ export default function ProjectTemplate({ data }) {
             <div
               className={`h-full flex flex-col justify-center gap-3 p-3 ${
                 i % 2
-                  ? "col-start-1 md:col-start-1 lg:col-start-1"
+                  ? "md:items-start col-start-1 md:col-start-1 lg:col-start-1"
                   : "md:items-end col-end-[-1] md:col-end-[-1] lg:col-end-[-1]"
               } bg-background/70 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0 rounded-lg relative row-start-1 col-span-9 md:col-span-6 lg:col-span-5 order-1`}
             >

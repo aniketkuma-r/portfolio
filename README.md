@@ -1,5 +1,5 @@
-# This is my personel portfolio website [Live Link](https://portfolio-aniket.vercel.app/)
-Tech Stack : Next Js, Javascript, Tailwind CSS, Google Sheets as CMS.
+# This is my personel portfolio website [Live Link](https://portfolio-aniketkuma-r.vercel.app/)
+Tech Stack : Next Js, Javascript, Tailwind CSS, NextUI, Google Sheets as CMS.
 
 Initially, I was using Strapi as a Content Management System (CMS). However, I encountered limitations as no cloud provider offers free long-term hosting for the Strapi backend. To address this, I transitioned to using Google Sheets as a CMS. This approach eliminates the need for server and database maintenance, allows easy access and modification of content, and ensures real-time updates on the website. However, it is important to note that Google Sheets is not a database.
 
