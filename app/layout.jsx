@@ -21,7 +21,7 @@ export default async function RootLayout({ children }) {
   const [global] = await getSheetData("global");
 
   return (
-    <html lang="en" className={`${gustarydelight.variable} dark`}>
+    <html lang="en" className={gustarydelight.variable} suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
           <Navbar resumeUrl={global.resumeUrl} />

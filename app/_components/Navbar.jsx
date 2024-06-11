@@ -13,6 +13,7 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const navOptions = [
   {
@@ -28,9 +29,11 @@ const navOptions = [
     link: "/contact",
   },
 ];
-export default function NavbarComponent({resumeUrl}) {
+
+export default function NavbarComponent({ resumeUrl }) {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Navbar
       isBordered
@@ -89,6 +92,9 @@ export default function NavbarComponent({resumeUrl}) {
             Resume
           </Button>
         </NavbarItem>
+        <NavbarItem>
+          <ThemeSwitcher />
+        </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {navOptions.map((item, index) => (
@@ -106,4 +112,4 @@ export default function NavbarComponent({resumeUrl}) {
       </NavbarMenu>
     </Navbar>
   );
-};
+}

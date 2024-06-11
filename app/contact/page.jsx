@@ -1,6 +1,6 @@
 import { Link, Button } from "@nextui-org/react";
 import { CiMail } from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaCodeFork } from "react-icons/fa6";
 import {
   FaGithub,
   FaInstagram,
@@ -8,6 +8,8 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
+import { SiCodeforces } from "react-icons/si";
 import { createElement } from "react";
 import { handleParallelSheetDataFetching } from "../api/getSheetData";
 
@@ -19,8 +21,11 @@ const Icons = {
   email: CiMail,
   whatsapp: FaWhatsapp,
   youtube: FaYoutube,
+  codeforces: SiCodeforces,
+  leetcode: TbBrandLeetcode,
+  fork: FaCodeFork,
 };
-export function getSocialLinks({ data, size }) {
+export function getIcons({ data, size }) {
   return data?.map((item) => {
     const name = item?.desc.toLowerCase();
     const icon = Icons[name];
@@ -37,8 +42,8 @@ export default async function Contact() {
     "socials",
     "contacts",
   ]);
-  const socialLinks = getSocialLinks({ data: socialsData, size: "2rem" });
-  const contacts = getSocialLinks({ data: contactsData, size: "1.5rem" });
+  const socialLinks = getIcons({ data: socialsData, size: "2rem" });
+  const contacts = getIcons({ data: contactsData, size: "1.5rem" });
 
   return (
     <main>
