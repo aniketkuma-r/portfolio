@@ -20,10 +20,10 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            background: "#dff5ff",
+            background: "#eceff9",
             foreground: "#11235a",
             primary: {
-              DEFAULT: "#006FEE",
+              DEFAULT: "#3369ff",
             },
           },
         },
